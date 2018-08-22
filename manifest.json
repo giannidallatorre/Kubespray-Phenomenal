@@ -1,5 +1,5 @@
 {
-  "applicationName": "Python-dummy",
+  "applicationName": "Kubespray-Phenomenal",
   "contactEmail": "walzer@ebi.ac.uk",
   "about": "A kubernetes deployment with a dummy python app",
   "version": "0.1",
