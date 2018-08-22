@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euoE pipefail
+set -euoEx pipefail
 
 # keys exists at $PUBLIC_KEY, $PRIVATE_KEY and profile key at $ssh_key
 export TF_VAR_public_key_path=$PUBLIC_KEY
