@@ -34,11 +34,7 @@ export DYNAMICINVENTORY=$PORTAL_DEPLOYMENTS_ROOT'/'$PORTAL_DEPLOYMENT_REFERENCE'
 #all dangling symlinks fixed?
 echo "＼(＾O＾)／ Fixing the inventory"
 cd $PORTAL_DEPLOYMENTS_ROOT'/'$PORTAL_DEPLOYMENT_REFERENCE'/kubespray'
-cp 'contrib/terraform/terraform.py' $PORTAL_DEPLOYMENTS_ROOT'/'$PORTAL_DEPLOYMENT_REFERENCE'/deployment/terraform.py'
-cp -r 'contrib/terraform/openstack/group_vars' $PORTAL_DEPLOYMENTS_ROOT'/'$PORTAL_DEPLOYMENT_REFERENCE'/deployment'
-cp -r 'contrib/terraform/openstack/group_vars' 'contrib/network-storage/glusterfs'
-cp -r 'contrib/terraform/openstack/group_vars' 'extra_playbooks'
-cp -r 'contrib/terraform/openstack/group_vars' 'inventory'
+cp $PORTAL_DEPLOYMENTS_ROOT'/'$PORTAL_DEPLOYMENT_REFERENCE'/deployment/terraform.py' 'contrib/terraform/terraform.py'
 
 echo "dyn inventory from terraform:"
 ls -lahR $PORTAL_DEPLOYMENTS_ROOT'/'$PORTAL_DEPLOYMENT_REFERENCE'/deployment'
